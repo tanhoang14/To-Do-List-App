@@ -62,3 +62,11 @@ body{
         }
     }  
 }
+$breakpoint-mobile: 480px;
+@media (max-width: $breakpoint-mobile) {
+  .list-todo-container{
+      .list-todo-content{
+          width: 88%;
+      }
+  } 
+}
