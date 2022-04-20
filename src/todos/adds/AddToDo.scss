@@ -5,9 +5,8 @@ h1{
     color:white;
 }
 .add-todo{
-    padding-left: 50px;
     .textbox{
-        width: 363px;
+        width: 315px;
         height: 26px;
         color: black;
     }
@@ -25,5 +24,22 @@ h1{
             background-color: #ff5959;
             transition: .2s;
         }
+    }
+}
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+    h1{
+        display:flex
+        
+    }
+    .add-todo{
+      .textbox{}
+      button{
+        width: 30%;
+        margin-top: 10px;
+        position: relative;
+        display: block;
+        left: 34%;
+      }
     }
 }
