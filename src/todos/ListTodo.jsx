@@ -2,7 +2,6 @@ import React from 'react'
 import AddTodo from './adds/AddToDo';
 import './ListTodo.scss'
 import { toast } from 'react-toastify';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {FaTrash} from 'react-icons/fa'
 import {FaEdit} from 'react-icons/fa'
 
