@@ -3,8 +3,8 @@ import AddTodo from './adds/AddToDo';
 import './ListTodo.scss'
 import { toast } from 'react-toastify';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faTrash} from '@fortawesome/free-solid-svg-icons'
-import {faFilePen} from '@fortawesome/free-solid-svg-icons'
+import {FaTrash} from 'react-icons/fa'
+import {FaEdit} from 'react-icons/fa'
 
 class ListTodo extends React.Component{
     state={
@@ -99,14 +99,11 @@ class ListTodo extends React.Component{
                             </>
                             }
                             <div className='list-buttons'>
-                                <FontAwesomeIcon icon={faFilePen} className='Edit'
-                                    onClick={()=>this.handleEditTodo(item)}
+                                <FaEdit className='Edit'
+                                    onClick={()=>this.handleEditTodo(item)} />
                                     
-                                ></FontAwesomeIcon>
-                                    
-                                <FontAwesomeIcon icon={faTrash} className='Delete'
-                                    onClick={()=>this.handleDeleteTodo(item)}
-                                ></FontAwesomeIcon>
+                                <FaTrash className='Delete'
+                                    onClick={()=>this.handleDeleteTodo(item)}/>
                             </div>
                         </div>
                         )
