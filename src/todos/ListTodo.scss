@@ -1,0 +1,64 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+body{
+    background: #071e3d
+}
+.list-todo-container{
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-items: center;
+    .list-todo-content{
+        width: 430px;
+        margin: 0 auto;
+        padding:30px;
+        .todo-child{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 40px;
+        border-bottom: 1px solid grey;
+        border: 2px solid #1f4287;
+        margin: 10px;
+        box-shadow: 5px 3px 5px black;
+        padding: 20px;
+        &:hover{
+            transform: scale(1.1);
+            transition: transform .2s;
+        }
+        &:nth-child(4n+1){
+                background: #21e6c1
+        }
+        &:nth-child(4n+2){
+                background: linear-gradient(
+                    90deg,
+                    rgba(255,118,20,1) 0%,
+                    rgba(255,84,17,1) 100%
+                );
+        }
+        &:nth-child(4n+3){
+                background: #ff304f
+        }
+        &:nth-child(4n+4){
+            background: #2f89fc
+    }
+        .list-buttons{
+            padding: 10px;
+
+            
+            .Edit{
+                cursor: pointer;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 20px;
+            }
+            .Delete{
+                cursor: pointer;
+                font-size: 20px;
+            }
+        }
+        }
+    }  
+}
